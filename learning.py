@@ -4,4 +4,6 @@ this is a practice file
 
 import math 
 
-math.floor(3.4)
+result = math.floor(3.4)
+
+print(result)
