@@ -8,7 +8,7 @@ Use the link above to open a JupyterLab session in your browser. Changes you mak
 
 > <table><tr>
 >   <td><strong>Note:</strong> The content repo url for this link currently points to the repo for this PR branch. It was generated using <a href="https://jupyterhub.github.io/nbgitpuller/link">nbgitpuller</a> as shown in the image to the right of this text. The content repo url will need to be changed to <code>alisonpchase/pigments-from-rss</code> on branch <code>main</code> before merge.</td>
->    <td><img src="images/screenshot.png" alt="nbgitpuller example fields"/></td>
+>    <td><img src="https://raw.githubusercontent.com/cisaacstern/pigments-from-rrs/images/images/screenshot.png" alt="nbgitpuller example"/></td>
 > </tr></table>
 
 <br>
@@ -33,4 +33,4 @@ jupyter lab
 
 When opening an notebook in a local JupyterLab session, make sure to select the `pigments` kernel as shown below:
 
-<img src="images/recording.gif" alt="nbgitpuller example fields"/>
+<img src="https://raw.githubusercontent.com/cisaacstern/pigments-from-rrs/images/images/recording.gif" alt="nbgitpuller example fields"/>
