@@ -1,0 +1,8 @@
+name: pigments
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8.8
+  - numpy
+  - matplotlib
+  - jupyterlab
