@@ -19,7 +19,7 @@ def _read_raw_data_from_source(filepath=None, use_mock_data=False):
 
         raw = {
             "wavelengths": wavelengths,
-            "Chla": (np.sin((wavelengths/10)) + 1),
+            "THISISATEST": (np.sin((wavelengths/10)) + 1),
             "Chlb": (np.cos(wavelengths/15) + 1),
             "Chlc": (np.cos(wavelengths/20) + 1),
             "PSC": (np.cos(wavelengths/25) + 1),
