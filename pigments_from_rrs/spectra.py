@@ -1,4 +1,5 @@
 from .to_pandas import seabass_to_pandas
+import pandas as pd 
 
 G1 = 0.0949  # g1 and g2 are values from Gordon et al., 1988
 G2 = 0.0794
@@ -16,7 +17,5 @@ def load_data(path):
     A pandas dataframe
 
     """
-    # Read and open data file
-
-    return path
+    return pd.read_csv(path)
     
