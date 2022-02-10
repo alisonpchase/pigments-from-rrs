@@ -8,6 +8,8 @@ from pigments_from_rrs.water_iops import (
     dlnasw_ds,
     PMH,
     betasw124_ZHH2009,
+    tempsal_corr,
+    get_water_iops,
 )
 
 
@@ -91,3 +93,23 @@ def test_betasw124_ZHH2009():
             assert (arr0 == round_result(arr1)).all()
         else:  # this is theta!
             assert (arr0 == arr1).all()
+
+
+def test_tempsal_corr():
+    expected_results = (
+        np.asarray([0.0001, 0, 0, 0, 0.0011, 0, 0.0004]),
+        np.asarray([0, 0, -1.0e-05, 0, -1.0e-05, 2.0e-05, -1.6e-04])
+    )
+    actual_results = tempsal_corr(lambda_=np.asarray(list(range(400, 701, 50))))
+    for arr0, arr1 in zip(expected_results, actual_results):
+        assert (arr0 == round_result(arr1)).all()
+
+
+def test_get_water_iops():
+    expected_results = (
+        np.asarray([0.00222, 0.00808, 0.02038, 0.05629, 0.22205, 0.3407, 0.6184]),
+        np.asarray([0.00658, 0.00397, 0.00254, 0.00170, 0.00118, 0.00085, 0.00062]),
+    )
+    actual_results = get_water_iops(lambda_=np.asarray(list(range(400, 701, 50))))
+    for arr0, arr1 in zip(expected_results, actual_results):
+        assert (arr0 == round_result(arr1)).all()
