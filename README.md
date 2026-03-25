@@ -1,3 +1,6 @@
+# please see (https://github.com/max-danenhower/pace-rrs-inversions-pigments) for python tools to calculate pigments from Rrs
+
+
 # pigments-from-rrs
 
 ## Run in-browser
